@@ -1,0 +1,118 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #a00;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 16px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  background-color: #d00;
+  transform: scale(1.1);
+}
+
+.container {
+  width: 800px !important;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #a00;
+  text-align: center;
+}
+
+.car {
+  border: 1px solid #a00;
+  margin-bottom: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+.car h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #a00;
+  animation: animation 3s infinite;
+}
+.car p {
+  font-size: 14px;
+  color: #333;
+}
+.car .price {
+  font-size: 16px;
+  color: #a00;
+  font-weight: bold;
+}
+.car .buy {
+  background-color: #a00 !important;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.car .buy:hover {
+  background-color: #d00;
+}
+
+.info-form {
+  border: 1px solid #a00;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+.info-form h3 {
+  margin: 0;
+  color: #a00;
+  font-size: 18px;
+  text-align: center;
+}
+.info-form input, .info-form textarea {
+  display: block;
+  width: 780px;
+  padding: 5px;
+  margin: 10px auto;
+  border: 1px solid #a00;
+}
+.info-form button {
+  background-color: #a00 !important;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.info-form button:hover {
+  background-color: #d00;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-5deg);
+  }
+}
+
+/*# sourceMappingURL=baseStyle.css.map */

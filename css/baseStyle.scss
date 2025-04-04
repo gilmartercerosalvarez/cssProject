@@ -1,0 +1,124 @@
+// Variables
+$font-family: "Comic Sans MS", cursive, sans-serif;
+$background-color: #fff;
+$primary-color: #a00;
+$hover-color: #d00;
+$container-width: 800px;
+$padding: 10px;
+$margin: 20px auto;
+$transition: all 0.5s ease;
+
+// Mixins
+@mixin button-styles {
+  background-color: $primary-color !important;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// Base styles
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: $primary-color;
+  width: $container-width;
+  margin: 0 auto;
+  padding: $padding;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: $padding 15px;
+    margin: 0 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: $transition;
+
+    &:hover {
+      background-color: $hover-color;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.container {
+  width: $container-width !important;
+  margin: $margin;
+}
+
+h1 {
+  color: $primary-color;
+  text-align: center;
+}
+
+.car {
+  border: 1px solid $primary-color;
+  margin-bottom: 20px;
+  padding: $padding;
+  overflow: hidden;
+
+  h2 {
+    font-size: 20px;
+    margin: 0;
+    color: $primary-color;
+    animation: animation 3s infinite;
+  }
+
+  p {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .price {
+    font-size: 16px;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .buy {
+    @include button-styles;
+  }
+}
+
+.info-form {
+  border: 1px solid $primary-color;
+  padding: $padding;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+
+  h3 {
+    margin: 0;
+    color: $primary-color;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  input, textarea {
+    display: block;
+    width: 780px;
+    padding: 5px;
+    margin: 10px auto;
+    border: 1px solid $primary-color;
+  }
+
+  button {
+    @include button-styles;
+  }
+}
+
+@keyframes animation {
+  0% { opacity: 0; }
+  50% { opacity: 1; transform: rotate(5deg); }
+  100% { opacity: 0; transform: rotate(-5deg); }
+}
