@@ -1,0 +1,37 @@
+@import 'baseStyle.scss';
+
+.car {
+  border: 1px solid $primary-color;
+  margin-bottom: 20px;
+  padding: $padding;
+  overflow: hidden;
+
+  .car-img {
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+  }
+
+  .car-title {
+    font-size: 20px;
+    margin: 0;
+    color: $primary-color;
+    animation: animation 3s infinite;
+  }
+
+  .car-description {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .price {
+    font-size: 16px;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .buy {
+    @include button-styles;
+  }
+}
