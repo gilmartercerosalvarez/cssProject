@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=800">
+  <title>Automobile Catalog</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .nav {
+      background-color: #a00;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 0 5px;
+      font-size: 16px;
+      display: inline-block;
+      transition: all 0.5s ease;
+    }
+    .nav a:hover {
+      background-color: #d00;
+      transform: scale(1.1);
+    }
+    .container {
+      width: 800px !important;
+      margin: 20px auto;
+    }
+    h1 {
+      color: #a00;
+      text-align: center;
+    }
+    .car {
+      border: 1px solid #a00;
+      margin-bottom: 20px;
+      padding: 10px;
+      overflow: hidden;
+    }
+    .car h2 {
+      font-size: 20px;
+      margin: 0;
+      color: #a00;
+      animation: animation 3s infinite;
+    }
+    .car p {
+      font-size: 14px;
+      color: #333;
+    }
+    .price {
+      font-size: 16px;
+      color: #a00;
+      font-weight: bold;
+    }
+    .buy {
+      background-color: #a00 !important;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .buy:hover {
+      background-color: #d00;
+    }
+    .info-form {
+      border: 1px solid #a00;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #f9f9f9;
+    }
+    .info-form h3 {
+      margin: 0;
+      color: #a00;
+      font-size: 18px;
+      text-align: center;
+    }
+    .info-form input, .info-form textarea {
+      display: block;
+      width: 780px;
+      padding: 5px;
+      margin: 10px auto;
+      border: 1px solid #a00;
+    }
+    .info-form button {
+      display: block;
+      width: 100px;
+      margin: 10px auto;
+      padding: 5px;
+      background-color: #a00 !important;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .info-form button:hover {
+      background-color: #d00;
+    }
+    @keyframes animation {
+      0% { opacity: 0; }
+      50% { opacity: 1; transform: rotate(5deg); }
+      100% { opacity: 0; transform: rotate(-5deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#" style="color:#fff; text-decoration:none; padding:10px 15px; margin:0 5px; font-size:16px; display:inline-block; transition:all 0.5s ease;">Home</a>
+    <a href="#" style="color:#fff; text-decoration:none; padding:10px 15px; margin:0 5px; font-size:16px; display:inline-block; transition:all 0.5s ease;">Catalog</a>
+    <a href="#" style="color:#fff; text-decoration:none; padding:10px 15px; margin:0 5px; font-size:16px; display:inline-block; transition:all 0.5s ease;">Contact</a>
+  </div>
+
+  <div class="container">
+    <h1 style="color:#a00; text-align:center;">Automobile Catalog</h1>
+
+    <div class="car" style="border:1px solid #a00; margin-bottom:20px; padding:10px; overflow:hidden;">
+      <img src="https://via.placeholder.com/200x150?text=Car+1" alt="Car 1" style="float:left; width:200px; height:150px; margin-right:10px;">
+      <h2 style="font-size:20px; margin:0; color:#a00; animation: animation 3s infinite;">Sports Car</h2>
+      <p style="font-size:14px; color:#333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna vitae urna dapibus sollicitudin.</p>
+      <p class="price" style="font-size:16px; color:#a00; font-weight:bold;">$50,000</p>
+      <button class="buy" style="background-color:#a00; color:#fff; padding:5px 10px; border:none; cursor:pointer; font-size:14px; margin-top:10px;">Buy</button>
+    </div>
+
+    <div class="car">
+      <img src="https://via.placeholder.com/200x150?text=Car+2" alt="Car 2" style="float:left; width:200px; height:150px; margin-right:10px;">
+      <h2 style="font-size:20px; margin:0; color:#a00; animation: animation 3s infinite;">Family Car</h2>
+      <p style="font-size:14px; color:#333;">Phasellus in neque nec lorem tincidunt suscipit. Vivamus ultrices tortor non metus eleifend, quis vehicula nisi porta.</p>
+      <p class="price" style="font-size:16px; color:#a00; font-weight:bold;">$30,000</p>
+      <button class="buy" style="background-color:#a00; color:#fff; padding:5px 10px; border:none; cursor:pointer; font-size:14px; margin-top:10px;">Buy</button>
+    </div>
+
+    <div class="car">
+      <img src="https://via.placeholder.com/200x150?text=Car+3" alt="Car 3" style="float:left; width:200px; height:150px; margin-right:10px;">
+      <h2>Compact Car</h2>
+      <p style="font-size:14px; color:#333;">Morbi vitae turpis sit amet sapien ultricies commodo. Sed et metus vitae elit fringilla bibendum.</p>
+      <p class="price">$20,000</p>
+      <button style="background-color:#a00; color:#fff; padding:5px 10px; border:none; cursor:pointer; font-size:14px; margin-top:10px;">Buy</button>
+    </div>
+
+    <div class="car" style="border:1px solid #a00; margin-bottom:20px; padding:10px; overflow:hidden;">
+      <img src="https://via.placeholder.com/200x150?text=Car+4" alt="Car 4" style="float:left; width:200px; height:150px; margin-right:10px;">
+      <h2>Electric Car</h2>
+      <p style="font-size:14px; color:#333;">Sed at velit vitae quam faucibus placerat. Donec non diam at erat venenatis tincidunt.</p>
+      <p class="price" style="font-size:16px; color:#a00; font-weight:bold;">$60,000</p>
+      <button class="buy" style="background-color:#a00; color:#fff; padding:5px 10px; border:none; cursor:pointer; font-size:14px; margin-top:10px;">Buy</button>
+    </div>
+
+    <div class="info-form" style="border:1px solid #a00; padding:10px; margin-top:20px; background-color:#f9f9f9;">
+      <h3>Request Information</h3>
+      <form id="requestForm">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+        <button type="submit" style="display:block; width:100px; margin:10px auto; padding:5px; background-color:#a00; color:#fff; border:none; cursor:pointer;">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("requestForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = this.name.value;
+      var email = this.email.value;
+      var message = this.message.value;
+      alert("Information sent:\nName: " + name + "\nEmail: " + email + "\nMessage: " + message);
+    });
+
+    var buyButtons = document.getElementsByClassName("buy");
+    for(var i = 0; i < buyButtons.length; i++){
+      buyButtons[i].addEventListener("click", function(){
+        alert("You have chosen to buy this car. (Functionality not implemented)");
+      });
+    }
+  </script>
+
+  <style>
+    @keyframes animation {
+      0% { opacity: 0; }
+      50% { opacity: 1; transform: rotate(5deg); }
+      100% { opacity: 0; transform: rotate(-5deg); }
+    }
+  </style>
+</body>
+</html>
