@@ -35,3 +35,108 @@
     @include button-styles;
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .nav {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav a {
+    padding: 10px;
+    margin: 0 2px;
+    font-size: 14px;
+  }
+
+  .car {
+    padding: 10px;
+  }
+
+  .car-img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
+  }
+
+  .car-title, .car-description, .price, .buy {
+    text-align: center;
+  }
+
+  .info-form input, .info-form textarea {
+    width: 100%;
+  }
+
+  .info-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .nav {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav a {
+    padding: 10px;
+    margin: 0 2px;
+    font-size: 12px;
+  }
+
+  .car {
+    padding: 10px;
+  }
+
+  .car-img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
+  }
+
+  .car-title, .car-description, .price, .buy {
+    text-align: center;
+  }
+
+  .info-form input, .info-form textarea {
+    width: 100%;
+  }
+
+  .info-form button {
+    width: 100%;
+  }
+}
+
+.buy {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px auto;
+  text-align: center;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+@media (max-width: 768px) {
+  .buy {
+    width: 100%;
+    max-width: 150px;
+    font-size: 50px;
+  }
+}

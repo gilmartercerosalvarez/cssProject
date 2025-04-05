@@ -114,111 +114,39 @@ h1 {
     transform: rotate(-5deg);
   }
 }
-.car {
+.info-form {
   border: 1px solid #a00;
-  margin-bottom: 20px;
   padding: 10px;
-  overflow: hidden;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.car .car-img {
-  float: left;
-  width: 200px;
-  height: 150px;
-  margin-right: 10px;
-}
-.car .car-title {
-  font-size: 20px;
+.info-form h3 {
   margin: 0;
   color: #a00;
-  animation: animation 3s infinite;
+  font-size: 18px;
+  text-align: center;
 }
-.car .car-description {
-  font-size: 14px;
-  color: #333;
+.info-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
 }
-.car .price {
+.info-form form label {
   font-size: 16px;
-  color: #a00;
-  font-weight: bold;
+  margin: 10px 0 5px;
 }
-.car .buy {
-  background-color: #a00 !important;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
+.info-form form input, .info-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #a00;
+  box-sizing: border-box;
 }
-.car .buy:hover {
-  background-color: #d00;
-}
-
-@media (max-width: 1024px) {
-  .container {
-    width: 90%;
-    padding: 0 10px;
-  }
-  .nav {
-    width: 100%;
-    padding: 10px;
-  }
-  .nav a {
-    padding: 10px;
-    margin: 0 2px;
-    font-size: 14px;
-  }
-  .car {
-    padding: 10px;
-  }
-  .car-img {
-    width: 100%;
-    height: auto;
-    margin: 0 0 10px 0;
-  }
-  .car-title, .car-description, .price, .buy {
-    text-align: center;
-  }
-  .info-form input, .info-form textarea {
-    width: 100%;
-  }
-  .info-form button {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
-  .nav {
-    width: 100%;
-    padding: 10px;
-  }
-  .nav a {
-    padding: 10px;
-    margin: 0 2px;
-    font-size: 12px;
-  }
-  .car {
-    padding: 10px;
-  }
-  .car-img {
-    width: 100%;
-    height: auto;
-    margin: 0 0 10px 0;
-  }
-  .car-title, .car-description, .price, .buy {
-    text-align: center;
-  }
-  .info-form input, .info-form textarea {
-    width: 100%;
-  }
-  .info-form button {
-    width: 100%;
-  }
-}
-.buy {
+.info-form form .send-button {
   width: 100%;
   max-width: 200px;
   padding: 10px;
@@ -230,16 +158,28 @@ h1 {
   margin: 10px auto;
   text-align: center;
 }
-.buy:hover {
+.info-form form .send-button:hover {
   background-color: #770000;
 }
 
 @media (max-width: 768px) {
-  .buy {
+  .info-form {
+    padding: 5px;
+  }
+  .info-form form {
+    max-width: 100%;
+  }
+  .info-form form label {
+    font-size: 14px;
+  }
+  .info-form form input, .info-form form textarea {
+    margin: 5px 0;
+  }
+  .info-form form .send-button {
     width: 100%;
     max-width: 150px;
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 
-/*# sourceMappingURL=card.css.map */
+/*# sourceMappingURL=forms.css.map */
